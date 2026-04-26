@@ -5,198 +5,316 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Para Mi Princesitaaaaa 💖</title>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
 body{
-  overflow:hidden;height:100vh;
-  background:radial-gradient(circle at top,#ff6bb722 0%,transparent 30%),
-             linear-gradient(135deg,#160811,#2a0e22,#3d1330);
-  font-family:'Poppins',sans-serif;position:relative;
+overflow:hidden;
+height:100vh;
+background:
+radial-gradient(circle at top,#ff6bb722 0%,transparent 30%),
+linear-gradient(135deg,#160811,#2a0e22,#3d1330);
+font-family:'Poppins',sans-serif;
+position:relative;
 }
 
 section{
-  width:100%;height:100vh;position:absolute;top:0;left:0;
-  display:flex;justify-content:center;align-items:center;
-  flex-direction:column;transition:1s;padding:20px;
+width:100%;
+height:100vh;
+position:absolute;
+top:0;
+left:0;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+transition:1s;
+padding:20px;
 }
 
+/* INICIO */
 #inicio{z-index:5;}
 
-.corona{font-size:4rem;filter:drop-shadow(0 0 12px gold);animation:flotarCorona 2s ease-in-out infinite;margin-bottom:10px;}
+.corona{
+font-size:4rem;
+filter:drop-shadow(0 0 12px gold);
+animation:flotarCorona 2s ease-in-out infinite;
+margin-bottom:10px;
+}
 
 #inicio h1{
-  font-family:'Great Vibes',cursive;font-size:4rem;color:white;
-  text-align:center;line-height:1.1;text-shadow:0 0 15px #fff,0 0 25px #ff77c8;
+font-family:'Great Vibes',cursive;
+font-size:4rem;
+color:white;
+text-align:center;
+line-height:1.1;
+text-shadow:0 0 15px #fff,0 0 25px #ff77c8;
 }
-#inicio p{margin-top:15px;font-size:1.1rem;color:#f8d8e9;font-style:italic;text-align:center;}
+
+#inicio p{
+margin-top:15px;
+font-size:1.1rem;
+color:#f8d8e9;
+font-style:italic;
+text-align:center;
+}
 
 .linea{
-  margin:25px 0;width:180px;height:2px;
-  background:linear-gradient(to right,transparent,#ffd76d,transparent);position:relative;
+margin:25px 0;
+width:180px;
+height:2px;
+background:linear-gradient(to right,transparent,#ffd76d,transparent);
+position:relative;
 }
-.linea::after{content:"✦";position:absolute;left:50%;top:-11px;transform:translateX(-50%);color:#ffd76d;}
+
+.linea::after{
+content:"✦";
+position:absolute;
+left:50%;
+top:-11px;
+transform:translateX(-50%);
+color:#ffd76d;
+}
 
 #btnEntrar{
-  margin-top:30px;padding:18px 55px;border:none;cursor:pointer;font-size:1.3rem;
-  color:white;border-radius:10px;
-  background:linear-gradient(135deg,#ff4f95,#ff6fa7);
-  box-shadow:0 0 20px #ff5ca8;animation:latido 1.6s infinite;
+margin-top:30px;
+padding:18px 55px;
+border:none;
+cursor:pointer;
+font-size:1.3rem;
+color:white;
+border-radius:10px;
+background:linear-gradient(135deg,#ff4f95,#ff6fa7);
+box-shadow:0 0 20px #ff5ca8;
+animation:latido 1.6s infinite;
 }
 
-#amor{opacity:0;pointer-events:none;z-index:4;}
-#amor.active{opacity:1;pointer-events:all;}
+/* PROPUESTA */
+#amor{
+opacity:0;
+pointer-events:none;
+z-index:4;
+}
 
-/* MARCO NEÓN ROSA */
+#amor.active{
+opacity:1;
+pointer-events:all;
+}
+
 .caja{
-  padding:40px 30px;
-  width:95%;max-width:680px;
-  text-align:center;
-  position:relative;
-  border-radius:10px;
-  background:rgba(10,4,14,0.75);
-  backdrop-filter:blur(8px);
-  border:2px solid #ff2d8a;
-  box-shadow:
-    0 0 6px  #ff2d8a,
-    0 0 18px #ff2d8a,
-    0 0 40px #ff2d8acc,
-    0 0 80px #cc1a6a88,
-    inset 0 0 20px rgba(255,45,138,.12),
-    inset 0 0 60px rgba(255,45,138,.06);
+padding:40px 30px;
+width:95%;
+max-width:680px;
+text-align:center;
+position:relative;
+border-radius:10px;
+background:rgba(10,4,14,.75);
+backdrop-filter:blur(8px);
+border:2px solid #ff2d8a;
+box-shadow:
+0 0 6px #ff2d8a,
+0 0 18px #ff2d8a,
+0 0 40px #ff2d8acc,
+0 0 80px #cc1a6a88;
 }
-
-.caja::before,.caja::after{
-  content:'';position:absolute;width:22px;height:22px;
-  border-color:#ff2d8a;border-style:solid;
-}
-.caja::before{top:-3px;left:-3px;border-width:3px 0 0 3px;border-radius:4px 0 0 0;}
-.caja::after{bottom:-3px;right:-3px;border-width:0 3px 3px 0;border-radius:0 0 4px 0;}
-
-.corner-tr,.corner-bl{
-  position:absolute;width:22px;height:22px;
-  border-color:#ff2d8a;border-style:solid;
-}
-.corner-tr{top:-3px;right:-3px;border-width:3px 3px 0 0;border-radius:0 4px 0 0;}
-.corner-bl{bottom:-3px;left:-3px;border-width:0 0 3px 3px;border-radius:0 0 0 4px;}
 
 .anillo{
-  font-size:4.5rem;
-  filter:drop-shadow(0 0 16px #ff2d8a) drop-shadow(0 0 30px #ff6ab0);
-  margin-bottom:14px;animation:latido 1.4s infinite;display:block;
+font-size:4.5rem;
+filter:drop-shadow(0 0 16px #ff2d8a);
+margin-bottom:14px;
+animation:latido 1.4s infinite;
+display:block;
 }
 
 #amor h2{
-  font-family:'Cinzel',serif;font-size:2.8rem;color:white;line-height:1.15;
-  text-shadow:0 0 10px #fff,0 0 22px #ff77c8,0 0 40px #ff2d8a;
-  letter-spacing:.03em;
+font-family:'Cinzel',serif;
+font-size:2.8rem;
+color:white;
+line-height:1.15;
+text-shadow:0 0 10px #fff,0 0 22px #ff77c8;
 }
 
-#amor p{margin-top:14px;color:#d8b0c8;font-style:italic;font-size:1rem;}
+#amor p{
+margin-top:14px;
+color:#d8b0c8;
+font-style:italic;
+}
 
-.botones{margin-top:30px;display:flex;gap:20px;justify-content:center;flex-wrap:wrap;}
+.botones{
+margin-top:30px;
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
 
-button{padding:14px 35px;border:none;cursor:pointer;font-size:1.2rem;border-radius:8px;transition:.3s;}
+button{
+padding:14px 35px;
+border:none;
+cursor:pointer;
+font-size:1.2rem;
+border-radius:8px;
+transition:.3s;
+}
 
 #si{
-  background:linear-gradient(135deg,#ff2d8a,#ff6fa7);color:white;
-  box-shadow:0 0 12px #ff2d8a,0 0 28px #ff2d8a88;
-  border:1px solid #ff6ab0;
+background:linear-gradient(135deg,#ff2d8a,#ff6fa7);
+color:white;
+box-shadow:0 0 12px #ff2d8a;
 }
-#si:hover{transform:scale(1.06);box-shadow:0 0 22px #ff2d8a,0 0 50px #ff2d8aaa;}
 
 #no{
-  background:rgba(20,8,20,.7);color:#ffd7ef;
-  border:1px solid #ff2d8a88;
-  box-shadow:0 0 8px #ff2d8a55;
-  position:relative;
+background:rgba(20,8,20,.8);
+color:#ffd7ef;
+border:1px solid #ff2d8a;
+box-shadow:0 0 10px #ff2d8a88;
 }
-#no:hover{transform:scale(1.05);}
 
-#final{opacity:0;pointer-events:none;z-index:3;}
-#final.active{opacity:1;pointer-events:all;}
+/* FINAL */
+#final{
+opacity:0;
+pointer-events:none;
+z-index:3;
+}
+
+#final.active{
+opacity:1;
+pointer-events:all;
+}
 
 .finalBox{
-  padding:40px 30px;border-radius:10px;text-align:center;position:relative;
-  background:rgba(10,4,14,.75);backdrop-filter:blur(8px);
-  border:2px solid #ff2d8a;
-  box-shadow:
-    0 0 6px  #ff2d8a,
-    0 0 18px #ff2d8a,
-    0 0 40px #ff2d8acc,
-    0 0 80px #cc1a6a88,
-    inset 0 0 20px rgba(255,45,138,.12);
-  max-width:680px;width:95%;
+padding:40px 30px;
+border-radius:10px;
+text-align:center;
+background:rgba(10,4,14,.75);
+backdrop-filter:blur(8px);
+border:2px solid #ff2d8a;
+box-shadow:
+0 0 6px #ff2d8a,
+0 0 18px #ff2d8a,
+0 0 40px #ff2d8acc;
+max-width:680px;
+width:95%;
 }
-.finalBox::before,.finalBox::after{content:'';position:absolute;width:22px;height:22px;border-color:#ff2d8a;border-style:solid;}
-.finalBox::before{top:-3px;left:-3px;border-width:3px 0 0 3px;border-radius:4px 0 0 0;}
-.finalBox::after{bottom:-3px;right:-3px;border-width:0 3px 3px 0;border-radius:0 0 4px 0;}
-.fc-tr,.fc-bl{position:absolute;width:22px;height:22px;border-color:#ff2d8a;border-style:solid;}
-.fc-tr{top:-3px;right:-3px;border-width:3px 3px 0 0;border-radius:0 4px 0 0;}
-.fc-bl{bottom:-3px;left:-3px;border-width:0 0 3px 3px;border-radius:0 0 0 4px;}
 
 .anilloGrande{
-  font-size:6rem;margin-bottom:15px;display:block;
-  filter:drop-shadow(0 0 18px #ff2d8a) drop-shadow(0 0 40px #ff6ab0);
+font-size:6rem;
+margin-bottom:15px;
+filter:drop-shadow(0 0 18px #ff2d8a);
 }
-#final h2{font-family:'Great Vibes',cursive;font-size:4rem;color:white;text-shadow:0 0 15px #fff,0 0 30px #ff5ca8;}
-#final p{margin-top:10px;font-size:1.1rem;color:#f7d6e8;max-width:600px;line-height:1.7;}
 
-.flor,.estrella,.palabra{position:absolute;pointer-events:none;}
+#final h2{
+font-family:'Great Vibes',cursive;
+font-size:4rem;
+color:white;
+text-shadow:0 0 15px #fff,0 0 30px #ff5ca8;
+}
+
+#final p{
+margin-top:10px;
+font-size:1.1rem;
+color:#f7d6e8;
+line-height:1.7;
+}
+
+/* EFECTOS */
+.flor,.estrella,.palabra{
+position:absolute;
+pointer-events:none;
+}
+
 .flor{animation:flotar 5s linear forwards;}
-.estrella{color:#fff7b0;animation:destello 2s linear forwards;text-shadow:0 0 8px white,0 0 20px #fff0a0;}
-.palabra{color:rgba(255,255,255,.11);font-weight:bold;white-space:nowrap;animation:subirPalabra 8s linear forwards;}
 
-@keyframes latido{0%,100%{transform:scale(1);}50%{transform:scale(1.08);}}
-@keyframes flotarCorona{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
-@keyframes flotar{
-  0%{transform:scale(.5);opacity:1;}
-  100%{transform:translate(calc(-220px + 440px*var(--randx)),calc(-220px + 440px*var(--randy))) scale(1.5);opacity:0;}
+.estrella{
+color:#fff7b0;
+animation:destello 2s linear forwards;
+text-shadow:0 0 8px white,0 0 20px #fff0a0;
 }
-@keyframes destello{0%{transform:scale(0);opacity:1;}50%{transform:scale(1.7);}100%{transform:scale(0);opacity:0;}}
+
+.palabra{
+color:rgba(255,255,255,.11);
+font-weight:bold;
+white-space:nowrap;
+animation:subirPalabra 8s linear forwards;
+}
+
+/* ANIMACIONES */
+@keyframes latido{
+0%,100%{transform:scale(1);}
+50%{transform:scale(1.08);}
+}
+
+@keyframes flotarCorona{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-8px);}
+}
+
+@keyframes flotar{
+0%{transform:scale(.5);opacity:1;}
+100%{
+transform:translate(
+calc(-220px + 440px*var(--randx)),
+calc(-220px + 440px*var(--randy))
+) scale(1.5);
+opacity:0;
+}
+}
+
+@keyframes destello{
+0%{transform:scale(0);opacity:1;}
+50%{transform:scale(1.7);}
+100%{transform:scale(0);opacity:0;}
+}
+
 @keyframes subirPalabra{
-  0%{transform:translateY(0);opacity:0;}10%{opacity:1;}90%{opacity:1;}100%{transform:translateY(-120vh);opacity:0;}
+0%{transform:translateY(0);opacity:0;}
+10%{opacity:1;}
+90%{opacity:1;}
+100%{transform:translateY(-120vh);opacity:0;}
 }
 
 @media(max-width:600px){
-  #inicio h1{font-size:3rem;}
-  #amor h2{font-size:2rem;}
-  #final h2{font-size:3rem;}
+#inicio h1{font-size:3rem;}
+#amor h2{font-size:2rem;}
+#final h2{font-size:3rem;}
 }
 </style>
 </head>
+
 <body>
 
 <section id="inicio">
-  <div class="corona">👑</div>
-  <h1>Hola,<br>amor de mi vida</h1>
-  <div class="linea"></div>
-  <p>Hay algo que quiero preguntarte...</p>
-  <button id="btnEntrar">Tócame 💘</button>
+<div class="corona">👑</div>
+<h1>Hola,<br>amor de mi vida</h1>
+<div class="linea"></div>
+<p>Hay algo que quiero preguntarte...</p>
+<button id="btnEntrar">Tócame 💘</button>
 </section>
 
 <section id="amor">
-  <div class="caja">
-    <div class="corner-tr"></div>
-    <div class="corner-bl"></div>
-    <span class="anillo">💍</span>
-    <h2>¿Quieres casarte<br>conmigo?</h2>
-    <p>Mi corazón te espera con todo el amor del mundo</p>
-    <div class="botones">
-      <button id="no">No 😢</button>
-      <button id="si">Sí, quiero 💖</button>
-    </div>
-  </div>
+<div class="caja">
+<span class="anillo">💍</span>
+<h2>¿Quieres casarte<br>conmigo?</h2>
+<p>Mi corazón te espera con todo el amor del mundo</p>
+
+<div class="botones">
+<button id="no">No 😢</button>
+<button id="si">Sí, quiero 💖</button>
+</div>
+</div>
 </section>
 
 <section id="final">
-  <div class="finalBox">
-    <div class="fc-tr"></div>
-    <div class="fc-bl"></div>
-    <span class="anilloGrande">💍</span>
-    <h2>¡Eres la persona más hermosa del mundo!</h2>
-    <p>Desde este momento y para siempre,<br>tú y yo juntos, mi princesita 💖</p>
-  </div>
+<div class="finalBox">
+<span class="anilloGrande">💍</span>
+<h2>¡Eres la persona más hermosa del mundo!</h2>
+<p>Desde este momento y para siempre,<br>tú y yo juntos, mi princesita 💖</p>
+</div>
 </section>
 
 <script>
@@ -209,55 +327,113 @@ const btnSi=document.getElementById("si");
 
 let primeraVez=true;
 
+/* ENTRAR */
 btnEntrar.onclick=()=>{
-  inicio.style.opacity="0";inicio.style.pointerEvents="none";
-  amor.classList.add("active");
+inicio.style.opacity="0";
+inicio.style.pointerEvents="none";
+amor.classList.add("active");
 };
 
+/* BOTON NO SE MUEVE */
 btnNo.addEventListener("mouseover",moverNo);
 btnNo.addEventListener("click",moverNo);
 
 function moverNo(){
-  if(primeraVez){primeraVez=false;return;}
-  let x=Math.random()*(window.innerWidth-130);
-  let y=Math.random()*(window.innerHeight-70);
-  btnNo.style.position="absolute";
-  btnNo.style.left=x+"px";btnNo.style.top=y+"px";
+
+if(primeraVez){
+primeraVez=false;
+return;
 }
 
+const anchoBoton=btnNo.offsetWidth;
+const altoBoton=btnNo.offsetHeight;
+const margen=20;
+
+let x=Math.random()*(window.innerWidth-anchoBoton-margen);
+let y=Math.random()*(window.innerHeight-altoBoton-margen);
+
+btnNo.style.position="fixed";
+btnNo.style.left=x+"px";
+btnNo.style.top=y+"px";
+btnNo.style.zIndex="999";
+}
+
+/* BOTON SI */
 btnSi.onclick=()=>{
-  amor.style.opacity="0";amor.style.pointerEvents="none";
-  setTimeout(()=>final.classList.add("active"),500);
-  for(let i=0;i<60;i++){setTimeout(()=>{crearFlor();crearEstrella();},i*120);}
+amor.style.opacity="0";
+amor.style.pointerEvents="none";
+
+setTimeout(()=>{
+final.classList.add("active");
+},500);
+
+for(let i=0;i<60;i++){
+setTimeout(()=>{
+crearFlor();
+crearEstrella();
+},i*120);
+}
 };
 
 const flores=["🌸","🌹","🌺","💮","🌷","💖","💕"];
+
 function crearFlor(){
-  let f=document.createElement("div");f.classList.add("flor");
-  f.innerHTML=flores[Math.floor(Math.random()*flores.length)];
-  f.style.left=Math.random()*window.innerWidth+"px";f.style.top=Math.random()*window.innerHeight+"px";
-  f.style.fontSize=(25+Math.random()*35)+"px";
-  f.style.setProperty('--randx',Math.random());f.style.setProperty('--randy',Math.random());
-  document.body.appendChild(f);setTimeout(()=>f.remove(),5000);
+let f=document.createElement("div");
+f.classList.add("flor");
+
+f.innerHTML=flores[Math.floor(Math.random()*flores.length)];
+
+f.style.left=Math.random()*window.innerWidth+"px";
+f.style.top=Math.random()*window.innerHeight+"px";
+f.style.fontSize=(25+Math.random()*35)+"px";
+
+f.style.setProperty('--randx',Math.random());
+f.style.setProperty('--randy',Math.random());
+
+document.body.appendChild(f);
+
+setTimeout(()=>f.remove(),5000);
 }
 
 const estrellas=["✦","✧","✨","⭐"];
+
 function crearEstrella(){
-  let e=document.createElement("div");e.classList.add("estrella");
-  e.innerHTML=estrellas[Math.floor(Math.random()*estrellas.length)];
-  e.style.left=Math.random()*window.innerWidth+"px";e.style.top=Math.random()*window.innerHeight+"px";
-  e.style.fontSize=(14+Math.random()*22)+"px";
-  document.body.appendChild(e);setTimeout(()=>e.remove(),2000);
+let e=document.createElement("div");
+e.classList.add("estrella");
+
+e.innerHTML=estrellas[Math.floor(Math.random()*estrellas.length)];
+
+e.style.left=Math.random()*window.innerWidth+"px";
+e.style.top=Math.random()*window.innerHeight+"px";
+e.style.fontSize=(14+Math.random()*22)+"px";
+
+document.body.appendChild(e);
+
+setTimeout(()=>e.remove(),2000);
 }
 
-const frases=["Te amo","Te quiero","Te adoro","Mi princesa","Mi reina","Mi vida","Mi amor","Eres perfecta","Mi tesoro","Mi corazón","Siempre tú","Contigo siempre","Mi universo","Te elijo","Mi niña hermosa","Mi coshita"];
+const frases=[
+"Te amo","Te quiero","Te adoro","Mi princesa",
+"Mi reina","Mi vida","Mi amor","Eres perfecta",
+"Mi tesoro","Mi corazón","Siempre tú",
+"Contigo siempre","Mi universo","Te elijo"
+];
+
 setInterval(()=>{
-  let p=document.createElement("div");p.classList.add("palabra");
-  p.innerHTML=frases[Math.floor(Math.random()*frases.length)];
-  p.style.left=Math.random()*window.innerWidth+"px";p.style.top=window.innerHeight+"px";
-  p.style.fontSize=(16+Math.random()*20)+"px";
-  document.body.appendChild(p);setTimeout(()=>p.remove(),8000);
+let p=document.createElement("div");
+p.classList.add("palabra");
+
+p.innerHTML=frases[Math.floor(Math.random()*frases.length)];
+
+p.style.left=Math.random()*window.innerWidth+"px";
+p.style.top=window.innerHeight+"px";
+p.style.fontSize=(16+Math.random()*20)+"px";
+
+document.body.appendChild(p);
+
+setTimeout(()=>p.remove(),8000);
 },180);
 </script>
+
 </body>
 </html>
